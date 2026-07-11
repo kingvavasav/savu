@@ -31,11 +31,14 @@ h1 { font-size:18px; margin-bottom:4px; }
 .report { background:#161b22; border:1px solid #21262d; border-radius:12px; padding:10px 12px; margin-bottom:10px; }
 .report .rh { font-size:14px; font-weight:700; margin-bottom:6px; }
 .report .rl { font-size:12px; color:#c9d1d9; margin:2px 0; word-break:break-word; }
+.ds { font-size:14px; font-weight:700; color:#e6edf3; padding:10px 12px; background:#161b22; border:1px solid #21262d; border-radius:12px; margin:8px 0 4px; cursor:pointer; list-style:none; }
+.ds::-webkit-details-marker { display:none; }
+details[open] .ds { border-bottom-left-radius:0; border-bottom-right-radius:0; }
 </style>
 </head>
 <body>
 <h1>📊 FEATURE Paper-Trade</h1>
-<div class="sub">Update 2026-07-12 00:11 WIB</div>
+<div class="sub">Update 2026-07-12 00:13 WIB</div>
 <div class="stat">
   <div class="box"><div class="v $pos">$10.00</div><div class="l">SALDO</div></div>
   <div class="box"><div class="v $pos">+0.0%</div><div class="l">NET</div></div>
@@ -98,7 +101,7 @@ h1 { font-size:18px; margin-bottom:4px; }
   <div class="row">SL <b>98.1274</b></div>
   <div class="row">FLT <b class="pos">?</b></div>
 </div>
-<div class="section">🟢 Profit (TP)</div>
+<details><summary class="ds">🟢 Profit (TP) — 2</summary>
 <div class="card closed">
   <div class="ch"><span>🟢 VIRTUAL</span><span class="tag">✅ TP1</span></div>
   <div class="row">PnL <b class="pos">+25.0%</b></div>
@@ -108,7 +111,8 @@ h1 { font-size:18px; margin-bottom:4px; }
   <div class="row">PnL <b class="pos">+25.0%</b></div>
   <div class="row sm">Entry 0.565418 · 2026-07-11 08:16:17</div>
 </div>
-<div class="section">🔴 Kena SL</div>
+</details>
+<details><summary class="ds">🔴 Kena SL — 3</summary>
 <div class="card closed">
   <div class="ch"><span>🟢 ARB</span><span class="tag">💔 SL</span></div>
   <div class="row">PnL <b class="neg">-10.0%</b></div>
@@ -122,7 +126,8 @@ h1 { font-size:18px; margin-bottom:4px; }
   <div class="row">PnL <b class="neg">-10.0%</b></div>
   <div class="row sm">Entry 0.619000 · 2026-07-11 17:31:11</div>
 </div>
-<div class="section">⏰ Expired</div>
+</details>
+<details><summary class="ds">⏰ Expired — 4</summary>
 <div class="card closed">
   <div class="ch"><span>🟢 BCH</span><span class="tag">⏰ EXPIRED</span></div>
   <div class="row">PnL <b class="pos">?</b></div>
@@ -140,6 +145,7 @@ h1 { font-size:18px; margin-bottom:4px; }
   <div class="row">PnL <b class="pos">?</b></div>
   <div class="row sm">Entry 0.081386 · 2026-07-10 08:17:04</div>
 </div>
+</details>
 <div class="section">Rekap Berkala</div>
 <div class="report">
   <div class="rh">📊 Weekly Report</div>
