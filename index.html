@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>FEATURE Dashboard</title>
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { background:#0d1117; color:#e6edf3; font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+  padding:12px; max-width:480px; margin:0 auto; }
+h1 { font-size:18px; margin-bottom:4px; }
+.sub { color:#8b949e; font-size:12px; margin-bottom:14px; }
+.stat { display:flex; gap:8px; margin-bottom:14px; }
+.stat .box { flex:1; background:#161b22; border:1px solid #21262d; border-radius:12px; padding:10px; text-align:center; }
+.stat .box .v { font-size:20px; font-weight:700; }
+.stat .box .l { font-size:11px; color:#8b949e; margin-top:2px; }
+.pos { color:#3fb950; } .neg { color:#f85149; }
+.section { font-size:13px; color:#8b949e; margin:16px 0 8px; text-transform:uppercase; letter-spacing:.5px; }
+.card { background:#161b22; border:1px solid #21262d; border-radius:12px; padding:10px 12px; margin-bottom:8px; }
+.card.run { border-left:4px solid #3fb950; }
+.card.wait { border-left:4px solid #d29922; }
+.card.closed { border-left:4px solid #30363d; opacity:.8; }
+.ch { display:flex; justify-content:space-between; align-items:center; font-size:15px; font-weight:600; margin-bottom:6px; }
+.tag { font-size:11px; color:#8b949e; font-weight:400; }
+.row { font-size:13px; margin:2px 0; }
+.row.sm { font-size:11px; color:#8b949e; }
+.empty { color:#8b949e; font-size:13px; padding:14px; text-align:center; }
+.chips { margin:8px 0 4px; }
+.chip { display:inline-block; background:#21262d; border-radius:8px; padding:4px 8px; margin:2px; font-size:12px; }
+.chip i { color:#8b949e; font-style:normal; }
+.report { background:#161b22; border:1px solid #21262d; border-radius:12px; padding:10px 12px; margin-bottom:10px; }
+.report .rh { font-size:14px; font-weight:700; margin-bottom:6px; }
+.report .rl { font-size:12px; color:#c9d1d9; margin:2px 0; word-break:break-word; }
+</style>
+</head>
+<body>
+<h1>📊 FEATURE Paper-Trade</h1>
+<div class="sub">Update 2026-07-12 00:00 WIB</div>
+<div class="stat">
+  <div class="box"><div class="v $pos">$10.00</div><div class="l">SALDO</div></div>
+  <div class="box"><div class="v $pos">+0.0%</div><div class="l">NET</div></div>
+  <div class="box"><div class="v">17%</div><div class="l">WIN RATE</div></div>
+</div>
+<div class="stat">
+  <div class="box"><div class="v">7</div><div class="l">OPEN</div></div>
+  <div class="box"><div class="v pos">2</div><div class="l">WIN</div></div>
+  <div class="box"><div class="v neg">3</div><div class="l">LOSS</div></div>
+</div>
+<div class="chips"><span class="chip">ARB <i>3</i></span><span class="chip">VIRTUAL <i>3</i></span><span class="chip">AAVE <i>2</i></span><span class="chip">BTC <i>2</i></span><span class="chip">LIT <i>2</i></span><span class="chip">ZEC <i>1</i></span><span class="chip">BCH <i>1</i></span><span class="chip">UNI <i>1</i></span></div>
+<div class="section">Posisi Terbuka</div>
+<div class="card wait">
+  <div class="ch"><span>🟢 UNI</span><span class="tag">⏳ WAIT LIMIT</span></div>
+  <div class="row">SET <b>$3.097685962985167</b></div>
+  <div class="row">TP <b>$3.2525702611344256 / $3.407454559283684 / $3.7172231555822</b></div>
+  <div class="row">SL <b>$3.0357322437254637</b></div>
+  <div class="row sm">2026-07-11 04:46:16</div>
+</div><div class="card run">
+  <div class="ch"><span>🟢 ENA</span><span class="tag">🚗 RUNNING</span></div>
+  <div class="row">SET <b>$0.08033414532223072</b></div>
+  <div class="row">TP <b>$0.08435085258834227 / $0.0883675598544538 / $0.09640097438667687</b></div>
+  <div class="row">SL <b>$0.07872746241578611</b></div>
+  <div class="row sm">2026-07-11 08:16:17</div>
+</div><div class="card run">
+  <div class="ch"><span>🔴 HBAR</span><span class="tag">🚗 RUNNING</span></div>
+  <div class="row">SET <b>$0.0691</b></div>
+  <div class="row">TP <b>$0.065645 / $0.062189999999999995 / $0.055279999999999996</b></div>
+  <div class="row">SL <b>$0.07048199999999999</b></div>
+  <div class="row sm">2026-07-11 17:09:26</div>
+</div><div class="card run">
+  <div class="ch"><span>🔴 BTC</span><span class="tag">🚗 RUNNING</span></div>
+  <div class="row">SET <b>$64196.01</b></div>
+  <div class="row">TP <b>$60986.2095 / $57776.409 / $51356.808</b></div>
+  <div class="row">SL <b>$65479.9302</b></div>
+  <div class="row sm">2026-07-11 18:11:15</div>
+</div><div class="card run">
+  <div class="ch"><span>🔴 CRV</span><span class="tag">🚗 RUNNING</span></div>
+  <div class="row">SET <b>$0.2058</b></div>
+  <div class="row">TP <b>$0.19551 / $0.18522 / $0.16464</b></div>
+  <div class="row">SL <b>$0.20991600000000002</b></div>
+  <div class="row sm">2026-07-11 18:11:16</div>
+</div><div class="card run">
+  <div class="ch"><span>🟢 WLD</span><span class="tag">🚗 RUNNING</span></div>
+  <div class="row">SET <b>$0.40696</b></div>
+  <div class="row">TP <b>$0.427308 / $0.447656 / $0.48835199999999995</b></div>
+  <div class="row">SL <b>$0.3988208</b></div>
+  <div class="row sm">2026-07-11 20:03:27</div>
+</div><div class="card run">
+  <div class="ch"><span>🟢 AAVE</span><span class="tag">🚗 RUNNING</span></div>
+  <div class="row">SET <b>$100.13</b></div>
+  <div class="row">TP <b>$105.1365 / $110.143 / $120.15599999999999</b></div>
+  <div class="row">SL <b>$98.1274</b></div>
+  <div class="row sm">2026-07-11 23:05:19</div>
+</div>
+<div class="section">Trade Terakhir</div>
+<div class="card closed">
+  <div class="ch"><span>🟢 ARB</span><span class="tag">💔 SL</span></div>
+  <div class="row">PnL <b class="neg">-10.0%</b></div>
+  <div class="row sm">2026-07-11 22:46:09</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 LIT</span><span class="tag">—</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-11 22:00:53</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 ARB</span><span class="tag">💔 SL</span></div>
+  <div class="row">PnL <b class="neg">-10.0%</b></div>
+  <div class="row sm">2026-07-11 21:32:01</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 VIRTUAL</span><span class="tag">💔 SL</span></div>
+  <div class="row">PnL <b class="neg">-10.0%</b></div>
+  <div class="row sm">2026-07-11 17:31:11</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 VIRTUAL</span><span class="tag">✅ TP1</span></div>
+  <div class="row">PnL <b class="pos">+25.0%</b></div>
+  <div class="row sm">2026-07-11 17:16:30</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 LIT</span><span class="tag">—</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-11 12:16:49</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 BTC</span><span class="tag">—</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-11 11:05:57</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 VIRTUAL</span><span class="tag">✅ TP1</span></div>
+  <div class="row">PnL <b class="pos">+25.0%</b></div>
+  <div class="row sm">2026-07-11 08:16:17</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 BCH</span><span class="tag">⏰ EXPIRED</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-10 18:01:58</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 ZEC</span><span class="tag">⏰ EXPIRED</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-10 09:31:20</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 AAVE</span><span class="tag">⏰ EXPIRED</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-10 08:58:46</div>
+</div><div class="card closed">
+  <div class="ch"><span>🟢 ARB</span><span class="tag">⏰ EXPIRED</span></div>
+  <div class="row">PnL <b class="pos">?</b></div>
+  <div class="row sm">2026-07-10 08:17:04</div>
+</div>
+<div class="section">Rekap Berkala</div>
+<div class="report">
+  <div class="rh">📊 Weekly Report</div>
+  
+</div>
+<div class="report">
+  <div class="rh">📅 Monthly Report</div>
+  
+</div>
+</body>
+</html>
