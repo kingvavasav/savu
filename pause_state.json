@@ -1,0 +1,12 @@
+{
+  "timestamp": "FINAL_1787305926_Z",
+  "strategies": {
+    "OBOS": {
+      "execution_paused": true,
+      "paused_at": "2026-08-21T17:00:00.000000Z",
+      "pause_reason": "Performance audit - negative expectancy (Exp=-0.965R, PF=0.21)",
+      "notifications_enabled": true,
+      "observability_enabled": true
+    }
+  }
+}
