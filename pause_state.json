@@ -3,7 +3,7 @@
   "strategies": {
     "OBOS": {
       "execution_paused": false,
-      "paused_at": "2026-08-21T17:00:00.000000Z",
+      "paused_at": "2026-08-21T10:32:41.%fZ",
       "pause_reason": "Performance audit - negative expectancy (Exp=-0.965R, PF=0.21)",
       "notifications_enabled": true,
       "observability_enabled": true
